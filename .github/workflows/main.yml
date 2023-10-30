@@ -1,0 +1,16 @@
+on:
+  workflow_dispatch:
+name: Label approved pull requests
+jobs:
+  labelWhenApproved:
+    name: Label when approved
+    runs-on: ubuntu-latest
+    steps:
+    - name: Label when approved
+      if: ${{ !contains(github.event.pull_request.labels.*.name, 'Do Not Merge') }}
+      uses: pullreminders/label-when-approved-action@master
+      env:
+        APPROVALS: "1"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ADD_LABEL: "Code Mergeable"
+        REMOVE_LABEL: "Code InReview"
