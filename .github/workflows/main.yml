@@ -25,5 +25,6 @@ jobs:
   # uses: christianvuerings/add-labels@ede518da81f427f037b828421aa08c239bfc7f47
       uses: christianvuerings/add-labels@v1.1
       with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # Labels to add
         labels: "invalid"
