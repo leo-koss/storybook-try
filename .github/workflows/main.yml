@@ -1,5 +1,6 @@
 on:
   push:
+    branches: "**/**"
   workflow_dispatch:
 name: Label approved pull requests
 jobs:
