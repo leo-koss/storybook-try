@@ -1,6 +1,6 @@
 on:
-  workflow_dispatch:
   push:
+  workflow_dispatch:
 name: Label approved pull requests
 jobs:
   labelWhenApproved:
