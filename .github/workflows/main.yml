@@ -22,5 +22,5 @@ jobs:
       env:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        # ADD_LABEL: "Code InReview"
+        ADD_LABEL: "Code InReview"
         REMOVE_LABEL: "Code%20InReview"
