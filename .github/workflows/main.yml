@@ -1,6 +1,6 @@
 on:
   push:
-    branches: "*/*"
+    branches: "**"
   # workflow_dispatch:
 name: Label approved pull requests
 jobs:
@@ -27,11 +27,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        github-token: ${{secrets.GITHUB_TOKEN}}
-        script: |
-          github.issues.addLabels({
-            owner: context.repo.owner,
-            repo: context.repo.repo,
-            issue_number: context.issue.number,
-            labels: ['bug']
-          })
+    # Labels to add
+        labels: "bug"
