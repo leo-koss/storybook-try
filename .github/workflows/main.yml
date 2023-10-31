@@ -8,10 +8,11 @@ jobs:
     name: Label when approved
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v2.3.1
-      with:
-        persist-credentials: false
+    # - name: Checkout 🛎️
+    #   uses: actions/checkout@v2.3.1
+    #   with:
+    #     persist-credentials: false
+    
     # - name: Label when approved
     #   # if: ${{ !contains(github.event.pull_request.labels.*.name, 'Do Not Merge') }}
     #   uses: pullreminders/label-when-approved-action@master
