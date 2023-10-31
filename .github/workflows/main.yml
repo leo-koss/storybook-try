@@ -13,6 +13,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # ADD_LABEL: "bug"
         # ADD_LABEL: "CodeInReview"
-        # ADD_LABEL: "Code Mergeable"
+        ADD_LABEL: "Code%20Mergeable"
         REMOVE_LABEL: "Code%20Mergeable"
         # REMOVE_LABEL: "CodeInReview"
