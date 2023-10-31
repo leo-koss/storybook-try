@@ -11,4 +11,4 @@ jobs:
       env:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        REMOVE_LABEL: "bug"
+        REMOVE_LABEL: "CodeInReview"
