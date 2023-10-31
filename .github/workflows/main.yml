@@ -14,4 +14,4 @@ jobs:
         # ADD_LABEL: "CodeInReview"
         ADD_LABEL: "Code Mergeable"
         # ADD_LABEL: "bug"
-        REMOVE_LABEL: "Code Mergeable"
+        # REMOVE_LABEL: "Code Mergeable"
