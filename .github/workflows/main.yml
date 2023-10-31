@@ -13,4 +13,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # ADD_LABEL: "CodeInReview"
         # ADD_LABEL: "bug"
-        REMOVE_LABEL: "bug"
+        REMOVE_LABEL: "CodeInReview"
