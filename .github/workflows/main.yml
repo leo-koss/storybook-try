@@ -12,4 +12,5 @@ jobs:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # ADD_LABEL: "CodeInReview"
-        REMOVE_LABEL: "bug"
+        ADD_LABEL: "bug"
+        # REMOVE_LABEL: "bug"
