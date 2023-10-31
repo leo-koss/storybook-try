@@ -5,14 +5,22 @@ jobs:
     name: Label when approved
     runs-on: ubuntu-latest
     steps:
-    - name: Label when approved
+    - name: add label when approved
       # if: ${{ !contains(github.event.pull_request.labels.*.name, 'Do Not Merge') }}
       uses: pullreminders/label-when-approved-action@master
       env:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "bug"
-        # ADD_LABEL: "CodeInReview"
+        # ADD_LABEL: "bug"
+        ADD_LABEL: "Code InReview"
         # ADD_LABEL: "Code%20Mergeable"
         # REMOVE_LABEL: "Code%20Mergeable"
-        REMOVE_LABEL: "bug"
+        # REMOVE_LABEL: "bug"
+    - name: remove Label when approved
+      # if: ${{ !contains(github.event.pull_request.labels.*.name, 'Do Not Merge') }}
+      uses: pullreminders/label-when-approved-action@master
+      env:
+        APPROVALS: "1"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ADD_LABEL: "Code Mergeable"
+        REMOVE_LABEL: "Code%20Mergeable"
