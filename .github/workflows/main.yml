@@ -11,5 +11,5 @@ jobs:
       env:
         APPROVALS: "1"
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        ADD_LABEL: "invalid"
-        REMOVE_LABEL: "bug"
+        ADD_LABEL: "Code InReview"
+        REMOVE_LABEL: "Code Mergeable"
